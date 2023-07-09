@@ -74,6 +74,7 @@ a.pokemon-link{
         padding: .5em .7em;
         background-color: gray;
         border-radius: 20px;
+        font-size: 100%;
       }
 
       @each $chave, $valor in $types {
@@ -92,4 +93,36 @@ a.pokemon-link{
 
     }
   }
+}
+
+
+@media (max-width: 700px) {
+
+  a.pokemon-link{
+    min-width: 70vw;
+    display: flex;
+    justify-content: center;
+
+    & .pokemon-container{
+      max-width: 85vw;
+      display: flex;
+      margin: 0 auto;
+    & > .image-container{
+      min-width: 85vw;
+
+      display: flex;
+
+      justify-content: center;
+      & > img.pokemon-image{
+
+        max-width: 90vw;
+        min-width: 70vw;
+        max-height: 50vh;
+        object-fit: cover;
+      }
+    }
+    }
+  }
+
+
 }
