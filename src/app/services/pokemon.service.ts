@@ -52,6 +52,7 @@ export class PokemonService {
         pokemons_data.results.forEach((pokemon_data)=>{
           this.getPokemonByUrl(pokemon_data.url).subscribe((pokemon)=>{
             this.allPokemons.push(pokemon);
+
           });
 
 
