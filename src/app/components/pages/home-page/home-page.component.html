@@ -1,4 +1,6 @@
-<div class="pokemons-list-container">
+<main>
+  <div class="pokemons-list-container" >
 
-    <app-pokemon [pokemonData]="allPokemons[0]"></app-pokemon>
-</div>
+    <app-pokemon [pokemonData]="pokemon" *ngFor="let pokemon of allPokemons" class="pokemon-card"></app-pokemon>
+  </div>
+</main>

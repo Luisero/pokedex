@@ -1,0 +1,15 @@
+main{
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemons-list-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & .pokemon-card{
+    margin: 20px;
+  }
+}

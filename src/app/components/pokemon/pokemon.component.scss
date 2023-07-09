@@ -3,9 +3,17 @@ $types: (
   grass: greenyellow,
   normal: gray,
   fighting: #ef3939,
+  dragon:tomato,
+  fairy:pink,
   flying: #06a8a8,
+  ice: #7bfffb,
   poison: #b505d0,
-
+  ground: #853319,
+  fire: #ff631e,
+  water: #0095ff,
+  rock: silver,
+  electric: #bbbb07,
+  psychic:#b98eb9,
 );
 
 
@@ -15,6 +23,7 @@ $types: (
 a.pokemon-link{
   text-decoration: none;
   color: whitesmoke;
+  max-width: 20vw;
 
   & .pokemon-container{
     background-color: #2a3242;
@@ -38,9 +47,16 @@ a.pokemon-link{
 
       & img {
         max-width: 20vw;
-        min-width: 15vw;
+        min-width: 10vw;
         max-height: 20vh;
         object-fit: cover;
+        transition: .3s ease-in-out;
+      }
+
+      &:hover img{
+        scale: 1.1;
+
+
       }
 
     }

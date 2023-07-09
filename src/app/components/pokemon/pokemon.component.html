@@ -11,7 +11,7 @@
     </div>
 
     <ul class="types-list" >
-      <li class="type" id="{{pokemonType}}" *ngFor="let pokemonType of pokemonData.types">
+      <li class="type {{pokemonType}}" *ngFor="let pokemonType of pokemonData.types">
         {{pokemonType }}
       </li>
     </ul>
