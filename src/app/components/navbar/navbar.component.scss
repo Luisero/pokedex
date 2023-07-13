@@ -1,0 +1,49 @@
+$activated-navbar-color: #fc573f;
+$deactivated-navbar-color: #1d2233;
+$deactivated-navbar-text-color: white;
+nav{
+  width: 100vw;
+  height: 10vh;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 10vh;
+  display: flex;
+
+  justify-content: space-evenly;
+  background-color: $deactivated-navbar-color;
+  border-radius: 0 0 10px 10px;
+
+  transition-duration: .4s;
+
+  &.activated{
+    background-color: $activated-navbar-color;
+  }
+
+  z-index: 20;
+
+  & .title-container{
+    & a{
+      color: $deactivated-navbar-text-color;
+      text-decoration: none;
+
+    }
+  }
+
+  & .nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+    list-style-type: none;
+    align-items: center;
+
+    & li a{
+      padding: 5px 10px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+

@@ -9,6 +9,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 10vh;
   & .pokemon-card{
     margin: 20px;
   }
